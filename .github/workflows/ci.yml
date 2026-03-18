@@ -46,3 +46,7 @@ jobs:
       - name: Build Frontend
         working-directory: client
         run: npm run build
+
+      - name: Fix Jest Permissions
+        working-directory: server
+        run: chmod +x node_modules/.bin/jest
